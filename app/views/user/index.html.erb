@@ -1,0 +1,11 @@
+<% @films.each do |film|%>
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-md-offset-4">
+      <a href="/mov/<%= film.id %>" class="thumbnail">
+        <img src="<%= film.image%>" alt="...">
+      </a>
+    </div>
+  </div>
+  </div>
+<% end %>
